@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <style>
+            .vertical{
+                transform: rotate(90deg);
+                float: left;
+                width: 100px;
+            }
+            img{
+                transform: rotate(180deg);
+                height: 100%;
+                width: auto;
+                float: right;
+            }
+            .block{
+                width: 100%;
+                border: 5px solid royalblue;
+                height: 400px;
+                overflow: hidden;
+                margin-top: -5;
+                position: relative;
+            }
+            p{
+                float: left;
+                width: 30%;
+                margin: 1%;
+                border-right: 1px solid red;
+            }
+            p:last-child{
+                border-right: none;
+            }
+            p:first-child{
+                margin-left: 30px;
+            }
+            .for-sale {
+                background-color: red;
+                color: white;
+                text-transform: uppercase;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 300px;
+                height: fit-content;
+                text-align: center;
+                padding: 30px;
+                transform: rotate(45deg);
+                margin-top: 33px;
+                margin-right: -120px;
+            }
+            .for-sale::before{
+                content: 'for sale';
+            }
+            .block:last-child{
+                //display: none;
+            }
+            h1::before{
+                content: ' The ';
+            }
+            h2::after{
+                content: ' everything on this Freaking class';
+            }
+            p::before{
+                content: 'Pedro is the best hacker ever';
+            }
+        </style>
+    </head>
+    <body>
+        <div class="block">
+                <h1>Class 2</h1>
+                <hr>
+                <h2>transform</h2>
+                <hr class="vertical">
+                <img src="https://previews.123rf.com/images/yamayka/yamayka1605/yamayka160500238/57465478-dibujo-para-colorear-peque%C3%B1o-mono-lindo-que-se-coloca-boca-abajo-y-sonriendo-.jpg" />
+        </div>
+        <div class="block">
+                <div class="for-sale"> </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing   elit. Suscipit itaque porro aut, laborum nobis blanditiis et nihil adipisci quod aliquam?</p>
+                <!--<hr class="vertical">-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim pariatur quo deserunt deleniti doloribus eos molestiae repellat.</p>
+                <!--<hr class="vertical">-->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur doloribus odio fuga aperiam harum debitis error iusto, vero modi velit!</p>
+                
+        </div>
+    </body>
+</html>
